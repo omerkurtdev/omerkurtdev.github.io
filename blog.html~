@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
 <head>
-<!-- 2022-05-10 Tue 20:18 -->
+<!-- 2022-05-10 Tue 22:03 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Blog</title>
@@ -57,7 +57,7 @@ font-weight:bold;
 <li><p>
 <a href="blog/fedora-silverblue.html">Fedora Silverblue değişmeyen işletim sistemi</a>
 </p>
-<div class="published" id="org229d3ee">
+<div class="published" id="orgd673b4e">
 <p>
 10-05-2022
 </p>
@@ -68,7 +68,7 @@ font-weight:bold;
 Fedora Silverblue kurduktan sonra normal Fedora'dan farkının olmadığını düşüneceksiniz ilk bakışta. Terminali açıp "dnf update" yazana kadar. Silverblue dağıtımı dnf paket yöneticisi ile gelmez. Onun yerine rpm-ostree paket yöneticisi ile gelir. rpm-ostree ile her güncelleme, kaldırma yada yükleme yaptıktan sonra sisteminizi yeniden başlatmanızı isteyecek, diğer dağıtımlardan sonra bu durum bana garip gelmişti. Flatpak yüklü olarak geliyor, Flatpak üzerinden istediğiniz uygulamayı yüklediğinizde tekrar başlatmanıza gerek yok sisteminizin.
 </p>
 
-<div class="morelink" id="orgaae94da">
+<div class="morelink" id="org01d5569">
 <p>
 <a href="blog/fedora-silverblue.html">Daha fazla&#x2026;</a>
 </p>
