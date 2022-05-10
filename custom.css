@@ -1,0 +1,9 @@
+#content > div > ul {
+    list-style-type: none;
+    margin-left: -39px;
+}
+#content > div > ul > li > p > a {
+    font-size: 2.1rem;
+    font-weight: bold;
+    text-decoration:none;
+}

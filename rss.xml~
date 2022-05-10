@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:georss="http://www.georss.org/georss"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:media="http://search.yahoo.com/mrss/"><channel>
+  <title>Blog | Ömer Kurt</title>
+  <atom:link href="https://omerkurtdev.github.io/blog/rss.xml" rel="self" type="application/rss+xml" />
+  <link>https://omerkurtdev.github.io/blog/</link>
+  <description><![CDATA[]]></description>
+  <language>tr</language>
+  <pubDate>Tue, 10 May 2022 20:20:06 +0300</pubDate>
+  <lastBuildDate>Tue, 10 May 2022 20:20:06 +0300</lastBuildDate>
+  <generator>Emacs 29.0 Org-mode 9.5.2</generator>
+  <webMaster>omer@fedora (Ömer Kurt)</webMaster>
+  <image>
+    <url>https://orgmode.org/img/org-mode-unicorn-logo.png</url>
+    <title>Blog | Ömer Kurt</title>
+    <link>https://omerkurtdev.github.io/blog/</link>
+  </image>
+
+
+  <item>
+    <title>Fedora Silverblue değişmeyen işletim sistemi</title>
+    <link>https://omerkurtdev.github.io/blog/fedora-silverblue.html</link>
+    <author>omer@fedora (Ömer Kurt)</author>
+    <guid isPermaLink="false">https://omerkurtdev.github.io/blog/fedora-silverblue.html</guid>
+    <pubDate>Tue, 10 May 2022 00:00:00 +0300</pubDate>
+
+    <description><![CDATA[<p>
+    Immutable nedir?
+    </p>
+
+    <p>
+    Immutable kavramının üzerinde çok fazla durmadık, değişmeyen işletim sistemi derken neyin kastedildiğinden bahsedelim.
+    Kök dosya sistemi salt-okunur olarak gelir. Bu durum sisteminizde sizden izinsiz dosya değiştirmenin yada dosya yazmanın önüne geçer. Kurduğunuz her paket sisteminizden bağımsız katman üzerinde çalışır. Bilgisayarınızı bootlarken istediğiniz katmanlar arasında geçiş yapabilirsiniz. Kök dosya sistemini değiştirmenin en güzel yolu rpm-ostree paket yöneticisini kullanmak. Sisteminiz istenmedik bir şekilde bozulursa kolayca en son deployment'a geri dönebilirsiniz.
+    </p>
+
+    <p>
+    rpm-ostree komutunu kullanarak bir paket yüklemek:
+    </p>
+    <pre class="example">
+    $ sudo rpm-ostree install "paket_adi"
+    </pre>
+    <p>
+    Bir önceki deployment'a geri dönmek:
+    </p>
+    <pre class="example">
+    $ sudo rpm-ostree roolback
+    </pre>
+    <p>
+    Toolbox
+    </p>
+    <p>
+    :ID:       ae10801e-1ba2-4644-9760-20dc3d99d495
+    :PUBDATE:  
+    </p>
+    <p>
+    Fedora Silverblue gibi immutable dağıtımlarda olması gereken güzel projelerden bir tanesi. Dağıtımınız içinde istediğiniz birçok dağıtıma ait olan imajları kullanarak konteyner oluşturmanıza olanak tanır. Podman'le birlikte çalışır. Konteyner içine yüklediğiniz uygulamaları ister grafik arayüz, ister cli ile çalıştırabilirsiniz. Ana sisteminiz(host) temiz kalmasını sağlar, istenmedik bir durum oluşursa kolayca kaldırabilirsiniz.
+    </p>
+
+    <div id="outline-container-org8d9d66d" class="outline-4">
+    <h4 id="org8d9d66d"><span class="section-number-4">1.0.1.</span> Toolbox konteyner oluşturma</h4>
+    <div class="outline-text-4" id="text-1-0-1">
+    <p>
+    Fedoranın en son imajını yükleyerek konteynerı size hazır hale getirir.
+    </p>
+    <div class="org-src-container">
+    <pre class="src src-shell">$ toolbox create
+    </pre>
+    </div>
+
+    <p>
+    Yeni oluşan konteynerın içine girmenize yarar. Birden fazla konteyner varsa '-c' parametresi ile konteyner adını girip spesifik konteynerınızı yönetebilirsiniz.
+    </p>
+    <div class="org-src-container">
+    <pre class="src src-shell">$ toolbox enter
+    $ toolbox enter -c <span style="font-style: italic;">"konteyner_adi"</span>
+    </pre>
+    </div>
+
+    <p>
+    Host sisteminizden konteyner girmeden uygulama çalıştırmak için:
+    </p>
+    <div class="org-src-container">
+    <pre class="src src-shell">$ toolbox run -c <span style="font-style: italic;">"konteyner_adi"</span> <span style="font-style: italic;">"uygulama_adi"</span>
+    </pre>
+    </div>
+    </div>
+    </div>
+
+    <div id="outline-container-org11bba17" class="outline-4">
+    <h4 id="org11bba17"><span class="section-number-4">1.0.2.</span> Toolbox ile Ubuntu konteynerı çalıştırma</h4>
+    <div class="outline-text-4" id="text-1-0-2">
+    <p>
+    Toolbox ile Ubuntu'nun lts sürümlerini çalıştırmak isterseniz resmi olmayan bir podman imajı. Şu versiyonlar mevcut: 16.04, 18.04, 20.04, 21.10
+    </p>
+    <div class="org-src-container">
+    <pre class="src src-shell"><span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">Clone the Jmennius branch</span>
+    $ git clone --single-branch --branch introduce-ubuntu-lts-images https://github.com/Jmennius/toolbox ubuntu-toolbox
+
+    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">Build the image using podman (or dnf install podman-docker to use docker command with podman)</span>
+    $ podman build -t toolbox-ubuntu:18.04 ubuntu-toolbox/images/ubuntu/18.04
+
+    <span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">Create toolbox container from the built image</span>
+    $ toolbox create --container my_ubuntu_18_04 --image toolbox-ubuntu:18.04
+
+    Created container: my_ubuntu_18_04
+    Enter with: toolbox enter my_ubuntu_18_04
+    </pre>
+    </div>
+    </div>
+    </div>
+    <div id="outline-container-orgda88a5f" class="outline-4">
+    <h4 id="orgda88a5f"><span class="section-number-4">1.0.3.</span> Toolbox ile Arch konteynerı çalıştırma</h4>
+    <div class="outline-text-4" id="text-1-0-3">
+    <p>
+    Toolbox resmi olarak desteklemiyor fakat yinede Toolbox için Arch imajı istiyorsanız şu komutları takip edin:
+    </p>
+    <div class="org-src-container">
+    <pre class="src src-shell">$ git clone --single-branch --branch arch-image https://github.com/erazemk/toolbox.git arch-toolbox
+    $ podman build -t toolbox-arch arch-toolbox/images/archlinux
+    $ toolbox create --container archlinux --image toolbox-arch
+
+    Created container: archlinux
+    Enter with: toolbox enter archlinux
+    </pre>
+    </div>
+    <hr />
+    <p>
+    Toolbox alternatifi bir projeden daha bahsetmek istiyorum kısaca. Projenin adı <a href="https://github.com/89luca89/distrobox">distrobox</a>. Toolbox Archlinux ve Fedora gibi birkaç dağıtımı desteklerken, distrobox daha fazla dağıtımı ve konteynerı desktekliyor. Birçok komutu toolbox ile aynı hatta ekstrası var mesela "distrobox-export" komutunu kullanarak konteyner içindeki uygulamanızı host sisteminize aktarır. Daha fazla detay için projenin github sayfasını göz gezdirebilirsiniz.
+    </p>
+    </div>
+    </div>
+
+    <div id="outline-container-org4aa777d" class="outline-3">
+    <h3 id="org4aa777d"><span class="section-number-3">1.1.</span> Kaynak</h3>
+    <div class="outline-text-3" id="text-1-1">
+    <hr />
+    <p>
+    Fedora Project. Updates and Rollbacks. (2 Mayıs 2022). Alındığı Tarih: 4 Mayıs 2022. Alındığı Yer: <a href="https://docs.fedoraproject.org/en-US/iot/applying-updates-UG/">https://docs.fedoraproject.org</a> | <a href="https://web.archive.org/web/20220504154831/https://docs.fedoraproject.org/en-US/iot/applying-updates-UG/">Arşiv</a>
+    Tomáš Popela. What is Silverblue? (12 Temmuz 2019). Alındığı Tarih: 4 Mayıs 2022. Alındığı Yer: <a href="https://fedoramagazine.org/what-is-silverblue/">https://fedoramagazine.org</a> | <a href="https://web.archive.org/web/20220504163927/https://fedoramagazine.org/what-is-silverblue/">Arşiv</a>
+    JayDoubleu. Can I make use of other containers like debian or arch. (3 Ocak 2021). Alındığı Tarih: 4 Mayıs 2022. Alındığı Yer: <a href="https://discussion.fedoraproject.org/t/can-i-make-use-of-other-containers-like-debian-or-arch/25468/10">https://discussion.fedoraproject.org</a> | <a href="https://web.archive.org/web/20220504164558/https://discussion.fedoraproject.org/t/can-i-make-use-of-other-containers-like-debian-or-arch/25468/10">Arşiv</a>
+    </p>
+    </div>
+    </div>
+    ]]></description>
+</item>
+</channel>
+</rss>
