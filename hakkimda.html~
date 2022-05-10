@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
 <head>
-<!-- 2022-05-10 Tue 22:03 -->
+<!-- 2022-05-10 Tue 22:57 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hakkımda</title>
@@ -55,26 +55,30 @@ font-weight:bold;
 <p>
 Zaman zaman deneyimlerimi anlatan ve özetleyen teknik bloglar ve makaleler yazıyorum. Özellikle açık kaynaklı projelerle ilgilenmeyi seviyorum. GNU/Linux kullanıcısıyım, Fedora dağıtımını kullanıyorum. Blogumdaki içerikleri kullanmaktan yada paylaşmaktan çekinmeyin.
 </p>
-
-<p>
-Blogumu GNU/Emacs Org-mode kullanarak oluşturdum. Emacs'i doom-emacs ile birlikte kullanıyorum.
-</p>
-
-<div id="outline-container-org4a7fba4" class="outline-2">
-<h2 id="org4a7fba4">Eğitim</h2>
-<div class="outline-text-2" id="text-org4a7fba4">
+<div id="outline-container-org9f7cd4e" class="outline-2">
+<h2 id="org9f7cd4e">Eğitim</h2>
+<div class="outline-text-2" id="text-org9f7cd4e">
 <p>
 Pamukkale Üniversitesi Yönetim Bilişim Sistemleri Lisans Programı
 </p>
 </div>
 </div>
+
+<div id="outline-container-org5c316a1" class="outline-2">
+<h2 id="org5c316a1">Blog Hakkında</h2>
+<div class="outline-text-2" id="text-org5c316a1">
+<p>
+Blogumu GNU/Emacs Org-mode kullanarak oluşturdum. Emacs'i doom-emacs ile birlikte kullanıyorum. Kullandığım CSS <a href="https://simplecss.org/">Simple.css</a>, MIT lisansı altındadır. Blogumda hiçbir şekilde çerezler kullanılmamaktadır. Bu site ziyaretler veya ziyaretçilerle ilgili herhangi bir veriyi veya ölçümü izlemek için herhangi bir üçüncü taraf kullanmaz. Blogumdaki RSS kod parçacığı için <a href="https://github.com/tecosaur/this-month-in-org">this month in org</a> sitesi, blog önizlemesi için <a href="https://loomcom.com/">loomcom</a> blogundan yararlanılmıştır, teşekkür ederim. İçeriklerim <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.tr">CC BY-SA 4.0</a> lisansı altındadır.
+</p>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
-<footer>
+<footer style="font-size:.7rem; color:#99999a;">
 <br>
 <hr>
-<p>Herhangi bir sorunuz veya geribildiriminiz varsa lütfen benimle Twitter'da paylaşmaktan çekinmeyin:<a href="https://twitter.com/omerkurtdev"> @omerkurtdev</p></a>
-<p><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.0.50 (<a href="https://orgmode.org/">Org mode</a> 9.5.2) kullanılırak oluşturuldu <a href="https://www.gnu.org/">GNU</a>/<a href="https://www.kernel.org/">Linux</a></p>
+<p>Herhangi bir sorunuz veya geribildiriminiz varsa lütfen benimle Twitter'da paylaşmaktan çekinmeyin:<a href="https://twitter.com/omerkurtdev"> @omerkurtdev</a> İçeriklerim <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.tr">CC-BY-SA 4.0</a> Lisansı altındadır.</p>
+<p><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.0.50 (<a href="https://orgmode.org/">Org mode</a> 9.5.2) kullanılırak oluşturuldu.<a href="https://www.gnu.org/">GNU</a>/<a href="https://www.kernel.org/">Linux</a></p>
 </footer>
 </div>
 </body>

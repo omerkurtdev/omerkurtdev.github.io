@@ -14,8 +14,8 @@
   <link>https://omerkurtdev.github.io/blog/</link>
   <description><![CDATA[]]></description>
   <language>tr</language>
-  <pubDate>Tue, 10 May 2022 22:03:12 +0300</pubDate>
-  <lastBuildDate>Tue, 10 May 2022 22:03:12 +0300</lastBuildDate>
+  <pubDate>Tue, 10 May 2022 22:59:34 +0300</pubDate>
+  <lastBuildDate>Tue, 10 May 2022 22:59:34 +0300</lastBuildDate>
   <generator>Emacs 29.0 Org-mode 9.5.2</generator>
   <webMaster>omer@fedora (Ömer Kurt)</webMaster>
   <image>
@@ -64,8 +64,8 @@
     Fedora Silverblue gibi immutable dağıtımlarda olması gereken güzel projelerden bir tanesi. Dağıtımınız içinde istediğiniz birçok dağıtıma ait olan imajları kullanarak konteyner oluşturmanıza olanak tanır. Podman'le birlikte çalışır. Konteyner içine yüklediğiniz uygulamaları ister grafik arayüz, ister cli ile çalıştırabilirsiniz. Ana sisteminiz(host) temiz kalmasını sağlar, istenmedik bir durum oluşursa kolayca kaldırabilirsiniz.
     </p>
 
-    <div id="outline-container-org55f600f" class="outline-4">
-    <h4 id="org55f600f"><span class="section-number-4">1.0.1.</span> Toolbox konteyner oluşturma</h4>
+    <div id="outline-container-org1b9c69f" class="outline-4">
+    <h4 id="org1b9c69f"><span class="section-number-4">1.0.1.</span> Toolbox konteyner oluşturma</h4>
     <div class="outline-text-4" id="text-1-0-1">
     <p>
     Fedoranın en son imajını yükleyerek konteynerı size hazır hale getirir.
@@ -94,8 +94,8 @@
     </div>
     </div>
 
-    <div id="outline-container-org9fc05d6" class="outline-4">
-    <h4 id="org9fc05d6"><span class="section-number-4">1.0.2.</span> Toolbox ile Ubuntu konteynerı çalıştırma</h4>
+    <div id="outline-container-org797c22b" class="outline-4">
+    <h4 id="org797c22b"><span class="section-number-4">1.0.2.</span> Toolbox ile Ubuntu konteynerı çalıştırma</h4>
     <div class="outline-text-4" id="text-1-0-2">
     <p>
     Toolbox ile Ubuntu'nun lts sürümlerini çalıştırmak isterseniz resmi olmayan bir podman imajı. Şu versiyonlar mevcut: 16.04, 18.04, 20.04, 21.10
@@ -116,8 +116,8 @@
     </div>
     </div>
     </div>
-    <div id="outline-container-org3de77eb" class="outline-4">
-    <h4 id="org3de77eb"><span class="section-number-4">1.0.3.</span> Toolbox ile Arch konteynerı çalıştırma</h4>
+    <div id="outline-container-org575f7d5" class="outline-4">
+    <h4 id="org575f7d5"><span class="section-number-4">1.0.3.</span> Toolbox ile Arch konteynerı çalıştırma</h4>
     <div class="outline-text-4" id="text-1-0-3">
     <p>
     Toolbox resmi olarak desteklemiyor fakat yinede Toolbox için Arch imajı istiyorsanız şu komutları takip edin:
@@ -138,8 +138,8 @@
     </div>
     </div>
 
-    <div id="outline-container-org40a544d" class="outline-3">
-    <h3 id="org40a544d"><span class="section-number-3">1.1.</span> Kaynak</h3>
+    <div id="outline-container-orgb01ab06" class="outline-3">
+    <h3 id="orgb01ab06"><span class="section-number-3">1.1.</span> Kaynak</h3>
     <div class="outline-text-3" id="text-1-1">
     <hr />
     <p>

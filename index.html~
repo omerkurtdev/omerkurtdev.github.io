@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr">
 <head>
-<!-- 2022-05-10 Tue 22:03 -->
+<!-- 2022-05-10 Tue 22:57 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ana Sayfa</title>
@@ -55,11 +55,11 @@ font-weight:bold;
 
 </div>
 <div id="postamble" class="status">
-<footer>
+<footer style="font-size:.7rem; color:#99999a;">
 <br>
 <hr>
-<p>Herhangi bir sorunuz veya geribildiriminiz varsa lütfen benimle Twitter'da paylaşmaktan çekinmeyin:<a href="https://twitter.com/omerkurtdev"> @omerkurtdev</p></a>
-<p><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.0.50 (<a href="https://orgmode.org/">Org mode</a> 9.5.2) kullanılırak oluşturuldu <a href="https://www.gnu.org/">GNU</a>/<a href="https://www.kernel.org/">Linux</a></p>
+<p>Herhangi bir sorunuz veya geribildiriminiz varsa lütfen benimle Twitter'da paylaşmaktan çekinmeyin:<a href="https://twitter.com/omerkurtdev"> @omerkurtdev</a> İçeriklerim <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.tr">CC-BY-SA 4.0</a> Lisansı altındadır.</p>
+<p><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.0.50 (<a href="https://orgmode.org/">Org mode</a> 9.5.2) kullanılırak oluşturuldu.<a href="https://www.gnu.org/">GNU</a>/<a href="https://www.kernel.org/">Linux</a></p>
 </footer>
 </div>
 </body>
